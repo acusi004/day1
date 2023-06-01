@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ds_sinh_vien">
+
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="70dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DANH SACH SINH VIEN"
+            android:background="@drawable/form"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/btnThemSinhVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Them moi"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dsSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ln1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
